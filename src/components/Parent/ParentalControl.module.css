@@ -1,0 +1,130 @@
+/* ParentalControl.module.css */
+
+/* Optional: Set a full background color for the body */
+body {
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    #5c258d,
+    #4389a2
+  ); /* Dark gray background for contrast */
+  font-family: "Roboto", sans-serif;
+}
+
+/* Container for the parental control section */
+.parentalControlContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #5c258d, #4389a2); /* Homepage gradient */
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.pageTitle {
+  font-size: 3rem; /* Increased font size for consistency */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.controlSection {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Light transparent section background */
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  color: #ffffff; /* White for section titles */
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.timeLimitControl,
+.lockControl,
+.requests {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 1.25rem;
+  color: #ffffff; /* White for labels */
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.input {
+  padding: 12px;
+  font-size: 1.25rem;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Slightly darker input background */
+  color: white;
+  border: 2px solid #4caf50; /* Green border */
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus {
+  border-color: #ffffff; /* White border on focus */
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.8); /* Green glow on focus */
+}
+
+.lockControl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lockStatus {
+  font-size: 1.2rem;
+  color: #ffffff; /* White text for lock status */
+  margin-bottom: 20px;
+}
+
+.lockButton {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 50px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  border: none;
+  color: #fff;
+  background-color: #4caf50; /* Green for unlock button */
+}
+
+.lockButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-3px);
+}
+
+.requests {
+  font-size: 1.2rem;
+  color: #bbbbbb; /* Light gray for requests section */
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #ffffff; /* Footer text color */
+}

@@ -1,0 +1,94 @@
+/* GameTracking.module.css */
+
+.gameTrackingContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent container */
+  border-radius: 12px;
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.pageBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #5c258d,
+    #4389a2
+  ); /* Gradient background */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  color: #0df2fa; /* Bright cyan for title */
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.timerDisplay {
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Slightly transparent black background */
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.timeLabel {
+  font-size: 1.5rem;
+  color: #0ecad7; /* Bright cyan label */
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.timeValue {
+  font-size: 3rem;
+  color: #ffffff; /* White for the time value */
+  font-weight: 700;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.controlButton {
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #3498db; /* Matching blue color */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.controlButton:hover {
+  background-color: #1a6ba1;
+  transform: translateY(-3px);
+}
+
+.resetButton {
+  background-color: #e74c3c; /* Red for reset */
+}
+
+.resetButton:hover {
+  background-color: #c0392b;
+}

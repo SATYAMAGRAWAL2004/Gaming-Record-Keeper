@@ -1,0 +1,139 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #5c258d, #4389a2);
+  color: rgb(242, 241, 242);
+}
+
+/* Header styles with shadow and 3D transform */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  /* perspective: 1000px; Perspective for 3D depth */
+  padding: 20px;
+  border-radius: 15px;
+
+  /* 3D transformation */
+  transform: rotateY(-10deg) rotateX(10deg); /* Initial 3D tilt */
+  transition: transform 0.5s ease-in-out; /* Smooth 3D transition */
+}
+
+.header:hover {
+  transform: rotateY(0deg) rotateX(0deg) scale(1.05); /* Reset 3D transform and scale slightly on hover */
+}
+
+/* 3D effect on the logo icon */
+.logoIcon {
+  font-size: 3rem;
+  margin-right: 10px;
+  transform: rotateY(20deg) rotateX(10deg); /* 3D rotation */
+  transition: transform 0.5s;
+}
+
+.header:hover .logoIcon {
+  transform: rotateY(0deg) rotateX(0deg); /* Reset on hover for a dynamic effect */
+}
+
+/* 3D effect on text using shadow */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 0px #e74c3c, 4px 4px 0px #3498db; /* Two layers of shadow for 3D look */
+  transition: text-shadow 0.5s ease;
+}
+
+.header:hover h1 {
+  text-shadow: 0px 0px 0px #e74c3c, 0px 0px 0px #3498db; /* Reset on hover for dynamic effect */
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.link:hover {
+  background-color: #45a049;
+}
+
+/* Styles for Sign Up and Login Buttons */
+.authButtonContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.authButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.authButton {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.4s, transform 0.3s;
+}
+
+.authButton:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+/* Footer Styles */
+.footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 0.9rem;
+}
